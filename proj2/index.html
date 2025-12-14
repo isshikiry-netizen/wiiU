@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTMLタグ見本</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>代表的なHTMLタグ</h1>
+      <nav>
+        <ul>
+          <li><a href="#text">テキスト</a></li>
+          <li><a href="#list">リスト</a></li>
+          <li><a href="#media">メディア</a></li>
+          <li><a href="#form">フォーム</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="text">
+        <h2>テキスト関連</h2>
+        <p>
+          <strong>p</strong> タグは段落を表します。 <em>em</em> や
+          <strong>strong</strong> で強調も可能です。
+        </p>
+        <blockquote>
+          blockquoteは引用を表現するタグです。引用元を<cite>cite</cite>で示せます。
+        </blockquote>
+        <p>
+          <code>code</code> でコード片を示し、 <mark>mark</mark> でハイライトできます。
+        </p>
+      </section>
+
+      <aside>
+        <h3>aside</h3>
+        <p>サイドに置きたい補足情報をまとめる領域。</p>
+        <time datetime="2024-01-01">2024年1月1日</time> に更新されました。
+      </aside>
+
+      <section id="list">
+        <h2>リスト・テーブル</h2>
+        <h3>順不同リスト (ul)</h3>
+        <ul>
+          <li>リンゴ</li>
+          <li>バナナ</li>
+          <li>オレンジ</li>
+        </ul>
+        <h3>番号付きリスト (ol)</h3>
+        <ol>
+          <li>HTMLを書こう</li>
+          <li>CSSで飾ろう</li>
+          <li>JavaScriptで動かそう</li>
+        </ol>
+        <h3>テーブル (table)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>タグ</th>
+              <th>用途</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;h1&gt;</td>
+              <td>見出し</td>
+            </tr>
+            <tr>
+              <td>&lt;a&gt;</td>
+              <td>リンク</td>
+            </tr>
+            <tr>
+              <td>&lt;img&gt;</td>
+              <td>画像を表示</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="media">
+        <h2>リンク・画像</h2>
+        <p>
+          <a href="https://developer.mozilla.org/ja/" target="_blank" rel="noreferrer"
+            >MDN Web Docs</a
+          >
+          はHTMLリファレンスでお馴染みのサイトです。
+        </p>
+        <figure>
+          <img
+            src="https://via.placeholder.com/400x200?text=Sample+Image"
+            alt="サンプル画像"
+          />
+          <figcaption>figure と figcaption で画像説明を添えられます。</figcaption>
+        </figure>
+      </section>
+
+      <article id="form">
+        <h2>フォーム</h2>
+        <p>ユーザーから情報を送るための代表的なタグです。</p>
+        <form id="sampleForm">
+          <label for="name">名前 (input)</label>
+          <input id="name" name="name" type="text" placeholder="山田太郎" />
+
+          <label for="message">メッセージ (textarea)</label>
+          <textarea id="message" name="message" rows="3" placeholder="こんにちは！"></textarea>
+
+          <label for="topic">トピック (select)</label>
+          <select id="topic" name="topic">
+            <option value="">選択してください</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+          </select>
+
+          <label>
+            <input type="checkbox" name="terms" checked />
+            利用規約に同意する (checkbox)
+          </label>
+
+          <label>
+            <input type="radio" name="device" value="pc" checked />
+            PC
+          </label>
+          <label>
+            <input type="radio" name="device" value="mobile" />
+            モバイル
+          </label>
+
+          <button type="submit">送信 (button)</button>
+        </form>
+        <p id="formResult" aria-live="polite"></p>
+      </article>
+    </main>
+
+    <footer>
+      <small>&copy; 2024 HTML Tag Sampler</small>
+    </footer>
+    <script src="main.js" defer></script>
+  </body>
+</html>
