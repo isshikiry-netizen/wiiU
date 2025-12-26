@@ -12,17 +12,17 @@
 
 body {
   margin: 0;
-  background: #f8fafc;
+  background: #ffffff;
   color: var(--ink);
   font-family: "Hiragino Sans", "Noto Sans JP", "Segoe UI", "Helvetica Neue", system-ui, -apple-system, sans-serif;
 }
 
 .section-card {
-  background: #fff;
-  border: 1px solid var(--border);
+  background: #ffffff;
+  /* border: 1px solid var(--border); */
   border-radius: 14px;
   padding: 24px;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+  /* box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06); */
 }
 
 .section-card p {
